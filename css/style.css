@@ -99,16 +99,16 @@ footer div {
   
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: rgba(255,255,255, 0.68);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 45%;
   }
   
   /* The Close Button */
   .close {
-    color: #aaaaaa;
+    color: #000000;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -116,13 +116,14 @@ footer div {
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #c62a2a;
     text-decoration: none;
     cursor: none;
   }
 
   .modal-content {
     color: #000000 !important;
+    border-radius: 10px;
   }
 
   .modal-content  h2{
@@ -131,7 +132,7 @@ footer div {
 
   table {
     width: 50%;
-    border: 1px solid #000000;
+    border: none;
     border-radius: 5px;
   }
 

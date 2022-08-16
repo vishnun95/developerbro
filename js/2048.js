@@ -87,7 +87,7 @@
 							document.getElementById(nId).innerHTML = (val+nVal);
 							document.getElementById(nId).style.backgroundColor = getColor((val+nVal));
 							document.getElementById((k+1)+""+j).innerHTML = "";
-							document.getElementById((k+1)+""+j).style.backgroundColor = "#ffffff";
+							document.getElementById((k+1)+""+j).style.backgroundColor = "transparent";
 							isMoved = true;
 							score += (val+nVal);
 						}
@@ -98,7 +98,7 @@
 					document.getElementById(nId).innerHTML = document.getElementById((k+1)+""+j).innerHTML;
 					document.getElementById(nId).style.backgroundColor = document.getElementById((k+1)+""+j).style.backgroundColor;
 					document.getElementById((k+1)+""+j).innerHTML = "";
-					document.getElementById((k+1)+""+j).style.backgroundColor = "#ffffff";
+					document.getElementById((k+1)+""+j).style.backgroundColor = "transparent";
 					isMoved = true;
 				}
 			}
@@ -137,7 +137,7 @@
 							document.getElementById(nId).innerHTML = (val+nVal);
 							document.getElementById(nId).style.backgroundColor = getColor((val+nVal));
 							document.getElementById(i+""+(k+1)).innerHTML = "";
-							document.getElementById(i+""+(k+1)).style.backgroundColor = "#ffffff";
+							document.getElementById(i+""+(k+1)).style.backgroundColor = "transparent";
 							isMoved = true;
 							score += (val+nVal);
 						}
@@ -148,7 +148,7 @@
 					document.getElementById(nId).innerHTML = document.getElementById(i+""+(k+1)).innerHTML;
 					document.getElementById(nId).style.backgroundColor = document.getElementById(i+""+(k+1)).style.backgroundColor;
 					document.getElementById(i+""+(k+1)).innerHTML = "";
-					document.getElementById(i+""+(k+1)).style.backgroundColor = "#ffffff";
+					document.getElementById(i+""+(k+1)).style.backgroundColor = "transparent";
 					isMoved = true;
 				}
 			}
@@ -187,7 +187,7 @@
 							document.getElementById(nId).innerHTML = (val+nVal);
 							document.getElementById(nId).style.backgroundColor = getColor((val+nVal));
 							document.getElementById((k-1)+""+j).innerHTML = "";
-							document.getElementById((k-1)+""+j).style.backgroundColor = "#ffffff";
+							document.getElementById((k-1)+""+j).style.backgroundColor = "transparent";
 							isMoved = true;
 							score += (val+nVal);
 						}
@@ -198,7 +198,7 @@
 					document.getElementById(nId).innerHTML = document.getElementById((k-1)+""+j).innerHTML;
 					document.getElementById(nId).style.backgroundColor = document.getElementById((k-1)+""+j).style.backgroundColor;
 					document.getElementById((k-1)+""+j).innerHTML = "";
-					document.getElementById((k-1)+""+j).style.backgroundColor = "#ffffff";
+					document.getElementById((k-1)+""+j).style.backgroundColor = "transparent";
 					isMoved = true;
 				}
 			}
@@ -237,7 +237,7 @@
 							document.getElementById(nId).innerHTML = (val+nVal);
 							document.getElementById(nId).style.backgroundColor = getColor((val+nVal));
 							document.getElementById(i+""+(k-1)).innerHTML = "";
-							document.getElementById(i+""+(k-1)).style.backgroundColor = "#ffffff";
+							document.getElementById(i+""+(k-1)).style.backgroundColor = "transparent";
 							isMoved = true;
 							score += (val+nVal);
 						}
@@ -248,7 +248,7 @@
 					document.getElementById(nId).innerHTML = document.getElementById(i+""+(k-1)).innerHTML;
 					document.getElementById(nId).style.backgroundColor = document.getElementById(i+""+(k-1)).style.backgroundColor;
 					document.getElementById(i+""+(k-1)).innerHTML = "";
-					document.getElementById(i+""+(k-1)).style.backgroundColor = "#ffffff";
+					document.getElementById(i+""+(k-1)).style.backgroundColor = "transparent";
 					isMoved = true;
 				}
 			}
