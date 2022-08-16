@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <title> Javascript : 2048 puzzle</title>
- </head>
- <body>
-	<center>
-	<a style="cursor: pointer; padding-left: 10%;" onclick="return load();">new game</a>
-	<div id="canvas"></div>	
-	<h2>Score : <div style="display:inline;" id="score"></div></h2>
-	<b>HOW TO PLAY:</b> Use your arrow keys to move the tiles.
-	</center>
-	<script type="text/javascript">
-    <!--
+    
 	//Size of the grid
 	var size = 4;
 	var min = 0;
@@ -25,7 +12,8 @@
 	function load() {
 		//alert("load");
 		//Load the table
-		var html = '<table border="1">';
+        document.getElementById("newGame").innerHTML = "New Game"
+		var html = '<table>';
 		for(var row=0;row<size;row++) {
 			html += '<tr>';
 			for(var col=0;col<size;col++) {
@@ -327,13 +315,14 @@
 			}
 		}
 		if(isOver) {
-			alert("Game over!");
+			// alert("Game over!");
+            document.getElementById('newGame').innerHTML = "Game Over !!!. Start New Game"
 		}
 		return false;
 	}
 	function getColor(val)
 	{
-		var color = "#ffffff";
+		var color = "#dedede";
 		switch(val) {
 			case 2:		color = "#F6CED8"; break;
 			case 4:		color = "#F7BE81"; break;
@@ -346,7 +335,7 @@
 			case 512:	color = "#01DF3A"; break;
 			case 1024:	color = "#D7DF01"; break;
 			case 2048:	color = "#D7DF01"; break;
-			default:	color = "#ffffff";
+			default:	color = "#dedede";
 		}
 		return color;
 	}
@@ -380,6 +369,3 @@
 	//calling load method
 	load();
   //-->
-  </script>
- </body>
-</html>
