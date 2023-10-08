@@ -997,7 +997,8 @@ button:hover .index {
 }
 
 .portfolio-image img {
-    height: 400px;
+    height: auto;
+    /* 400px; */
     width: 100%;
     position: relative;
 }
@@ -1804,7 +1805,8 @@ For devices with smaller width like mobile phone
     }
 
     .portfolio-image img {
-        height: 300px;
+        height: auto;
+        /*300px  */
         width: 100%;
     }
 
@@ -2352,7 +2354,8 @@ for tabs and large phones
     }
 
     .portfolio-image img {
-        height: 380px;
+        height: auto;
+        /* 380px */
         width: 100%;
         position: relative;
     }
@@ -2610,7 +2613,8 @@ for tabs and large phones
 @media all and (max-width: 9000px) and (min-width: 1441px) {
 
     .portfolio-image img {
-        height: 500px;
+        height: auto;
+        /* 500px */
         width: 100%;
         position: relative;
     }
