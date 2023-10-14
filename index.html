@@ -643,10 +643,16 @@ Web development services involve designing, coding, and maintaining websites and
         message: document.getElementById('body').value
     }
 
+    let passingdata = new FormData();
+    passingdata.append("name", document.getElementById('name').value);
+    passingdata.append("email", document.getElementById('email').value);
+    passingdata.append("subhject", document.getElementById('subject').value);
+    passingdata.append("message", document.getElementById('body').value);
+
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(data).toString(),
+    body: new URLSearchParams(passingdata).toString(),
   })
     .then(() => console.log("Form successfully submitted"))
     .catch((error) => alert(error));
