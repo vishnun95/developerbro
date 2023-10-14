@@ -561,6 +561,7 @@ Web development services involve designing, coding, and maintaining websites and
                      Message Me
                  </div>
                  <form id="myForm" name="contact" method="post" enctype="multipart/form-data" data-netlify=true >
+                    <input type="hidden" name="contact" value="contact" />
                     <div class="input-line">
                         <input  id="name" type="text" name="name" placeholder="Name" class="input-name">
                         <input id="email" type="email" name="email" placeholder="Email"  class="input-name">
@@ -649,6 +650,7 @@ Web development services involve designing, coding, and maintaining websites and
     passingdata.append("subhject", document.getElementById('subject').value);
     passingdata.append("message", document.getElementById('body').value);
 
+    console.log('passs', passingdata);
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
