@@ -570,6 +570,19 @@ Web development services involve designing, coding, and maintaining websites and
                     <textarea id ="body" name="message" class="input-textarea" placeholder="message"></textarea>
                     <button type="button" onclick="handleSubmit(event)">Submit</button>
                  </form>
+
+                 <form name="contact" method="POST" data-netlify="true">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" class="input-name" placeholder="Name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="input-name" placeholder="Email" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea name="message" class="input-textarea"  placeholder="Message" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
                
              </div>
             <!--Contact form-->
@@ -664,6 +677,9 @@ Web development services involve designing, coding, and maintaining websites and
 //   .querySelector("form")
 //   .addEventListener("submit", handleSubmit);
 
+document.querySelector("form[name='contact']").addEventListener("submit", function(event) {
+            alert("Thank you for your message!");
+        });
 </script>
 
 </body>
