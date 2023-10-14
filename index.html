@@ -640,28 +640,9 @@ Web development services involve designing, coding, and maintaining websites and
 </script>
 
 <script>
-document.querySelector("form[name='contact']").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const formData = new FormData(form);
-
-    fetch("/.netlify/functions/submit-form", {
-        method: "POST",
-        body: JSON.stringify(Object.fromEntries(formData)),
-        headers: {
-            "Content-Type": "application/json",
-        },
-    })
-    .then(response => {
-        if (response.ok) {
-            form.reset(); // Clear the form after a successful submission
+      document.querySelector("form[name='contact']").addEventListener("submit", function(event) {
             alert("Thank you for your message!");
-        } else {
-            alert("Something went wrong. Please try again later.");
-        }
-    });
-});
+        });
 </script>
 
 </body>
