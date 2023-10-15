@@ -1274,7 +1274,7 @@ form {
 }
 
 .input-name {
-    width: 40%;
+    width: 80%;
     padding: 10px 20px;
     margin: 14px;
     border-radius: 8px;
@@ -1308,7 +1308,7 @@ form {
 }
 
 .input-textarea {
-    width: 84%;
+    width: 80%;
     padding: 10px 20px;
     margin: 15px;
     height: 150px;
@@ -1319,6 +1319,7 @@ form {
     color: whitesmoke;
     font-family: poppins;
     font-size: 18px;
+    resize: none;
 }
 
 form button {
@@ -2555,6 +2556,7 @@ for tabs and large phones
         color: whitesmoke;
         font-family: poppins;
         font-size: 16px;
+        resize: none;
     }
 
     form button {
